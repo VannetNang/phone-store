@@ -1,0 +1,132 @@
+
+.logo__container {
+    height: 90px;
+    background: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-display div {
+    color: white;
+}
+
+.samsung__logo,
+.oppo__logo,
+.google__logo,
+.xiaomi__logo {
+    width: 150px;
+    margin-left: 10rem;
+}
+
+.apple__logo {
+    width: 45px;
+    margin-left: 10rem;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.product__container {
+    border: 1px groove;
+    padding: 1rem;
+}
+
+.image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.product-image {
+    width: 170px;
+    height: 200px;
+}
+
+.product-storage {
+    margin-bottom: 1rem;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    height: 3.2rem; 
+    line-height: 1.6rem; 
+}
+
+.rating__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.rating-stars {
+    width: 50%;
+    margin-left: -3px;
+}
+
+.rating-count {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    padding-top: 3px;
+    color: #017bc6;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 550;
+    margin-bottom: 2rem;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-btn {
+    border: none;
+    font-family: Roboto, Arial;
+    padding: 8px 4rem;
+    font-size: 0.9rem;
+    background: #ffd814;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.product-btn:hover {
+    background: #dfbf1c;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1450px) {
+    .main__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__container {
+        grid-template-columns: 1fr;
+    }
+}

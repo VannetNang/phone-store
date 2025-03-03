@@ -1,0 +1,119 @@
+#about-us {
+    background: #141414;
+    height: 115vh;
+    color: #fff;
+    padding-top: 5rem;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.text__container h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.8rem;
+    letter-spacing: 3px;
+    background-image: linear-gradient(to top, #43655a 0%, #FF2E2E 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.text__container p {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    padding: 1rem 2rem;
+}
+
+.img__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.img__container img {
+    padding-right: 3rem;
+    width: auto;
+}
+
+.text__container p::selection {
+    background: #fa8072;
+    color: #141414;
+}
+
+.text__container p::first-letter {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    color: #43655a;
+}
+
+@media screen and (max-width: 960px) {
+    #about-us {
+        height: auto;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .about__container {
+        flex-direction: column; 
+        padding: 0 1rem; 
+    }
+
+    .text__container {
+        width: 100%; 
+    }
+
+    .text__container h1 {
+        font-size: 3rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .text__container p {
+        font-size: 1.1rem; 
+        line-height: 1.8rem; 
+        padding: 1rem;
+    }
+
+    .img__container img {
+        width: 90%; 
+        max-width: 500px; 
+        padding-top: 1rem;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text__container h1 {
+        font-size: 2.5rem; 
+    }
+
+    .text__container p {
+        font-size: 1rem; 
+    }
+    
+    .img__container img {
+        width: 100%;
+    }
+}

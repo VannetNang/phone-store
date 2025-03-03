@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> STAYCOOL — STORE </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/store/navbar.css">
+  <link rel="stylesheet" href="styles/store/aside.css">
+  <link rel="stylesheet" href="styles/store/about-us.css">
+  <link rel="stylesheet" href="styles/store/main.css">
+  <link rel="stylesheet" href="styles/store/footer.css">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__header">
+        <a href="/" class="navbar__logo">
+          <i class="fa-solid fa-gem"> </i> STAYCOOL
+        </a>
+      </div>
+      
+      <div class="navbar__menu" id="mobile-screen">
+        <span class="bar"> </span>
+        <span class="bar"> </span>
+        <span class="bar"> </span>
+      </div>
+
+      <ul class="navbar__items">
+        <li class="navbar__link">
+          <a href="#samsung-logo">Samsung</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#oppo-logo">Oppo</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#apple-logo">Apple</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#xiaomi-logo">Xiaomi</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#google-logo">Google</a>
+        </li>
+      </ul>
+
+      <div class="navbar__cart">
+        <a href="checkout.html">
+          <i class="fa-solid fa-cart-shopping" style="color: #b72a31;"></i>
+          <span class="cart-quantity js-cart-quantity"></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <aside>
+    <div class="aside">
+      <div class="aside__container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/pic1.svg" alt="Slide 1">    
+            </div>
+  
+            <div class="swiper-slide">
+              <img src="images/pic3.svg" alt="Slide 2">
+            </div>
+  
+            <div class="swiper-slide">
+              <img src="images/pic4.svg" alt="Slide 3">
+            </div>
+  
+            <div class="swiper-slide">
+              <img src="images/pic5.svg" alt="Slide 4">
+            </div>
+          </div>
+  
+          <!-- Swiper Pagination & Navigation Buttons -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="aside__content">
+        <h1>STAYCOOL STORE</h1>
+        <h2>ULTIMATE SHOPPING</h2>
+      </div>
+    </div>
+  </aside>
+  
+
+  <section id="about-us">
+    <div class="about__container">
+      <div class="text__container">
+        <h1>About Us</h1>
+        <p>
+          Welcome to STAYCOOL, your go-to destination for the latest and greatest in tech!
+          We specialize in bringing you high-quality smartphones from top brands like 
+          Samsung, Oppo, Apple, Xiaomi, and Google. Our mission is to provide a seamless
+          shopping experience, ensuring you get the best deals and excellent customer 
+          service. Shop with confidence and stay cool with the newest gadgets in the 
+          market!
+        </p>
+        <button class="aside__btn">
+          <a href="#samsung-logo">Start Shopping</a>
+        </button>
+      </div>
+      <div class="img__container">
+        <img src="images/pic2.webp">
+      </div>
+    </div>
+  </section>
+
+  <main>
+      <section class="logo__container" id="samsung-logo">
+        <marquee direction="right" scrollamount="20">
+          <img class="samsung__logo" src="images/logos/Samsung_Logo.svg.png" alt="Brand Logo">
+          <img class="samsung__logo" src="images/logos/Samsung_Logo.svg.png" alt="Brand Logo">
+          <img class="samsung__logo" src="images/logos/Samsung_Logo.svg.png" alt="Brand Logo">
+          <img class="samsung__logo" src="images/logos/Samsung_Logo.svg.png" alt="Brand Logo">
+          <img class="samsung__logo" src="images/logos/Samsung_Logo.svg.png" alt="Brand Logo">
+        </marquee>
+      </section>
+      <div class="main__container js-brand-samsung-container">
+      </div>
+
+      <section class="logo__container" id="oppo-logo">
+        <marquee direction="right" scrollamount="20">
+          <img class="oppo__logo" src="images/logos/Oppo-Logo.wine.png" alt="Brand Logo">
+          <img class="oppo__logo" src="images/logos/Oppo-Logo.wine.png" alt="Brand Logo">
+          <img class="oppo__logo" src="images/logos/Oppo-Logo.wine.png" alt="Brand Logo">
+          <img class="oppo__logo" src="images/logos/Oppo-Logo.wine.png" alt="Brand Logo">
+          <img class="oppo__logo" src="images/logos/Oppo-Logo.wine.png" alt="Brand Logo">             
+        </marquee>
+      </section>
+      <div class="main__container js-brand-oppo-container">
+      </div>
+
+      <section class="logo__container" id="apple-logo">
+        <marquee direction="right" scrollamount="20">
+          <img class="apple__logo" src="images/logos/Apple-logo.png" alt="Brand Logo">
+          <img class="apple__logo" src="images/logos/Apple-logo.png" alt="Brand Logo">
+          <img class="apple__logo" src="images/logos/Apple-logo.png" alt="Brand Logo">
+          <img class="apple__logo" src="images/logos/Apple-logo.png" alt="Brand Logo">
+          <img class="apple__logo" src="images/logos/Apple-logo.png" alt="Brand Logo">
+        </marquee>
+      </section>
+      <div class="main__container js-brand-apple-container">
+      </div>
+
+      <section class="logo__container" id="xiaomi-logo">
+        <marquee direction="right" scrollamount="20">
+          <img class="xiaomi__logo" src="images/logos/Xiaomi-logo.png.webp" alt="Brand Logo">
+          <img class="xiaomi__logo" src="images/logos/Xiaomi-logo.png.webp" alt="Brand Logo">
+          <img class="xiaomi__logo" src="images/logos/Xiaomi-logo.png.webp" alt="Brand Logo">
+          <img class="xiaomi__logo" src="images/logos/Xiaomi-logo.png.webp" alt="Brand Logo">
+          <img class="xiaomi__logo" src="images/logos/Xiaomi-logo.png.webp" alt="Brand Logo">
+        </marquee>
+      </section>
+      <div class="main__container js-brand-xiaomi-container">
+      </div>
+
+      <section class="logo__container" id="google-logo">
+        <marquee direction="right" scrollamount="20">
+          <img class="google__logo" src="images/logos/Google-Pixel-Logo.png" alt="Brand Logo">
+          <img class="google__logo" src="images/logos/Google-Pixel-Logo.png" alt="Brand Logo">
+          <img class="google__logo" src="images/logos/Google-Pixel-Logo.png" alt="Brand Logo">
+          <img class="google__logo" src="images/logos/Google-Pixel-Logo.png" alt="Brand Logo">
+          <img class="google__logo" src="images/logos/Google-Pixel-Logo.png" alt="Brand Logo">
+        </marquee>
+      </section>
+      <div class="main__container js-brand-google-container">
+      </div>
+  </main>
+
+  <footer>
+    <section class="contact__section" id="contact__section">
+      <div class="contact__container">
+        <div class="left__container">
+          <h1 class="contact-me"> Contact Me</h1>
+          <h4>  
+            <i class="fa-regular fa-paper-plane" style="color: #b625a3;"></i> VannetNang59@gmail.com
+          </h4>
+          <h4> 
+            <i class="fa-solid fa-phone" style="color: #b427a1;"></i> (+855) 12 212 238
+          </h4>
+          <h4>
+            <i class="fa-solid fa-location-dot" style="color: #b62f92;"></i> Phnom Penh, Cambodia
+          </h4>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/vannet.nang.73" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.facebook.com/vannet.nang.73" target="_blank">
+              <i class="fab fa-facebook-messenger"></i>
+            </a>
+            <a href="" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/SuperBoingBoing/" target="_blank">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://github.com/SuperBoingBoing/" target="_blank">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </div>
+            
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.1030152253657!2d104.89837077501168!3d11.616005343146902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095177ee61fd7d%3A0xa66cfdf83a58b2ae!2sAmerican%20University%20of%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1740242955245!5m2!1sen!2skh" 
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map"> </iframe>
+                  
+          <span id="map">   
+            Google Map        
+          </span>               
+        </div>
+          
+        <div class="right__container">
+          <form name="submit-to-google-sheet">
+            <div>
+              <label for="user_name">Enter Your Name</label>
+              <input type="text" name="name" id="user_name" required>
+            </div>
+        
+            <div>
+              <label for="user_email">Enter Your Email</label>
+              <input type="email" name="email" id="user_email" required>
+            </div>
+            
+            <div>
+              <label for="user_text">Message</label>
+              <textarea name="text" id="user_text" required></textarea>
+            </div>
+    
+            <button type="submit">Send Message</button>
+
+            <span class="success-text"></span>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </footer>
+
+  <script type="module" src="scripts/utils/slideImg.js"> </script>
+  <script type="module" src="scripts/store.js"> </script>
+  <script src="scripts/utils/navbar.js"> </script>
+  <script src="scripts/utils/contactMe.js"></script>
+  <script src="scripts/utils/openMap.js"></script>
+  <script src="https://kit.fontawesome.com/887532cb5c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

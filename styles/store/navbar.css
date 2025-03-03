@@ -1,0 +1,139 @@
+
+.navbar {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background: #141414;
+    width: 100%;
+}
+
+.navbar__header {
+    width: 60%;
+}
+
+.navbar__logo {
+    font-size: 3rem;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #fa8072 0%, #cf1919
+    100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    letter-spacing: 10px;
+}
+
+.fa-gem {
+    padding-left: 2rem;
+}
+
+.navbar__items {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__link,
+.navbar__cart {
+    padding: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.navbar__link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar__link a:hover {
+    color: #ff8177;
+    transition: all 0.3s ease;
+}
+
+.navbar__cart a {
+    position: relative;
+}
+
+.fa-cart-shopping {
+    font-size: 2.2rem;
+}
+
+.cart-quantity {
+    position: absolute;
+    background: #ffffffd1;
+    color: #be1d1d;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    right: -10px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        background: #141414;
+    }
+
+    .navbar__header {
+        width: 70%;
+    }
+
+    .navbar__logo {
+        font-size: 2.2rem;
+        letter-spacing: 5px;
+    }
+
+    .navbar__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        height: 68vh;
+        background: #141414;
+        top: 90px;
+        opacity: 0;
+    }
+
+    .navbar__link {
+        font-size: 1.8rem;
+    }
+
+    .navbar__menu .bar {
+        display: flex;
+        height: 4px;
+        background: #b72a31;
+        width: 35px;
+        margin: 7px;
+    }
+
+    .navbar__items.active {
+        opacity: 1;
+        transition: all 0.75s ease-in-out;
+    }
+
+    #mobile-screen.is-active .bar:nth-of-type(2){
+        opacity: 0;
+    }
+
+    #mobile-screen.is-active .bar:nth-of-type(1){
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    #mobile-screen.is-active .bar:nth-of-type(3){
+        transform: translateY(-11px) rotate(-45deg);
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STAYCOOL — CHECKOUT</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/checkout/navbar.css" />
+  <link rel="stylesheet" href="styles/checkout/main.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__header">
+        <a href="/" class="navbar__logo">
+          <i class="fa-solid fa-gem"> </i> STAYCOOL
+        </a>
+      </div>
+
+      <div class="navbar__text">
+        Checkout Summary <span> (3 items) </span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main__content">
+    <h1>Review your order</h1>
+    <div class="main__container">
+      <div class="order__summary__container js-order-summary"></div>
+
+      <div class="payment__summary__container js-payment-summary"></div>
+    </div>
+  </main>
+
+  <script type="module" src="scripts/orderSummary.js"></script>
+  <script type="module" src="scripts/paymentSummary.js"></script>
+  <script
+    src="https://kit.fontawesome.com/887532cb5c.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
